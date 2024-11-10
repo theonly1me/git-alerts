@@ -4,7 +4,7 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "dev": "deno run --allow-net --allow-env src/index.ts",
+        "dev": "supabase start || true && supabase functions serve --env-file ./supabase/.env.local    ",
         "deploy": "deno deploy --project serverless"
     },
     "devDependencies": {

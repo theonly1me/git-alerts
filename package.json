@@ -12,7 +12,7 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "npm run --workspace apps/frontend dev",
+    "dev": "npm run --workspace apps/frontend dev && npm run --workspace packages/serverless dev",
     "build": "npm run --workspace apps/frontend build && npm run --workspace packages/serverless deploy",
     "lint": "npm run --workspace apps/frontend lint",
     "format": "prettier --write ."
