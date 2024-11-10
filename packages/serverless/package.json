@@ -1,0 +1,19 @@
+{
+    "name": "@git-alerts/serverless",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "deno run --allow-net --allow-env src/index.ts",
+        "deploy": "deno deploy --project serverless"
+    },
+    "devDependencies": {
+        "@git-alerts/eslint-config": "*",
+        "@git-alerts/prettier-config": "*",
+        "@git-alerts/tsconfig": "*",
+        "@types/deno": "^2.0.0"
+    },
+    "engines": {
+        "deno": "^1.36.0"
+    }
+}

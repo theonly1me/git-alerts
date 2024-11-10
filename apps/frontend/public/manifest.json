@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "git-alerts",
+  "version": "1.0.0",
+  "description": "Get alerts for your PRs or the ones where you are a reviewer",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "notifications",
+    "alarms",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://api.github.com/*",
+    "https://*/*"
+  ]
+}

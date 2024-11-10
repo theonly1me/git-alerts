@@ -1,0 +1,1 @@
+# @git-alerts/eslint-config
