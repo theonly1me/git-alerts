@@ -20,7 +20,7 @@ enabled = false
 
 [db]
 # Port to use for the local database URL.
-port = 54322
+port = 54325
 # Port used by db diff command to initialize the shadow database.
 shadow_port = 54320
 # The database major version to use. This has to be the same as your remote database's. Run `SHOW
@@ -35,7 +35,7 @@ port = 54329
 # Configure one of the supported pooler modes: `transaction`, `session`.
 pool_mode = "transaction"
 # How many server connections to allow per user/database pair.
-default_pool_size = 20
+default_pod_size = 20
 # Maximum number of client connections allowed.
 max_client_conn = 100
 
