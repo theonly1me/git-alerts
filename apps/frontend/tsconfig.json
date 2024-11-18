@@ -1,13 +1,13 @@
 {
-    "extends": "@git-alerts/tsconfig/tsconfig.json",
-    "compilerOptions": {
-        "baseUrl": "src",
-        "paths": {
-          "@/*": ["*"]
-        },
-      "lib": ["DOM", "ES2021"],
-      "types": ["chrome", "bun-types"],
-      "jsx": "react-jsx"
+  "extends": "@git-alerts/tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"]
     },
-    "include": ["src"]
+    "lib": ["DOM", "ES2021"],
+    "types": ["chrome", "bun-types"],
+    "jsx": "react-jsx"
+  },
+  "include": ["src"]
 }

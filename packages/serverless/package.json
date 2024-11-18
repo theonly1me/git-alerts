@@ -1,19 +1,19 @@
 {
-    "name": "@git-alerts/serverless",
-    "version": "1.0.0",
-    "private": true,
-    "type": "module",
-    "scripts": {
-        "dev": "supabase start || true && supabase functions serve --env-file ./supabase/.env.local    ",
-        "deploy": "supabase functions deploy gh-exchange-code"
-    },
-    "devDependencies": {
-        "@git-alerts/eslint-config": "*",
-        "@git-alerts/prettier-config": "*",
-        "@git-alerts/tsconfig": "*",
-        "@types/deno": "^2.0.0"
-    },
-    "engines": {
-        "deno": "^1.36.0"
-    }
+  "name": "@git-alerts/serverless",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "supabase start || true && supabase functions serve --env-file ./supabase/.env.local    ",
+    "deploy": "supabase functions deploy gh-exchange-code"
+  },
+  "devDependencies": {
+    "@git-alerts/eslint-config": "*",
+    "@git-alerts/prettier-config": "*",
+    "@git-alerts/tsconfig": "*",
+    "@types/deno": "^2.0.0"
+  },
+  "engines": {
+    "deno": "^1.36.0"
+  }
 }

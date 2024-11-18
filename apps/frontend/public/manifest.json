@@ -20,8 +20,5 @@
     "48": "icon48.png",
     "128": "icon128.png"
   },
-  "host_permissions": [
-    "https://api.github.com/*",
-    "https://*/*"
-  ]
+  "host_permissions": ["https://api.github.com/*", "https://*/*"]
 }

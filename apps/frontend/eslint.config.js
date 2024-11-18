@@ -1,3 +1,3 @@
 module.exports = {
-    extends: ["@git-alerts/eslint-config"]
- };
+  extends: ["@git-alerts/eslint-config"],
+};

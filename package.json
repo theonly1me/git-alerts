@@ -14,7 +14,7 @@
   "scripts": {
     "dev": "bun run --filter=@git-alerts/frontend dev && bun run --filter=@git-alerts/serverless dev",
     "build": "bun run --filter=@git-alerts/frontend build && bun run --filter=@git-alerts/serverless deploy",
-    "lint": "bun run --filter=@git-alerts/frontend lint",
+    "lint": "npm run --filter=@git-alerts/frontend lint",
     "format": "prettier --write ."
   }
 }

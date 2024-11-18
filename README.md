@@ -21,12 +21,14 @@ Git Alerts is a browser extension that helps developers stay on top of their cod
 ## Getting Started 🛠️
 
 1. Clone the repository
+
 ```bash
 git clone https://github.com/yourusername/git-alerts.git
 cd git-alerts
 ```
 
 2. Install dependencies
+
 ```bash
 bun install
 #or
@@ -34,6 +36,7 @@ npm install
 ```
 
 3. Start development server
+
 ```bash
 bun run dev
 # or
@@ -41,8 +44,9 @@ npm run dev
 ```
 
 4. Build for production
+
 ```bash
-bun run build 
+bun run build
 # or
 npm run build
 ```
@@ -70,6 +74,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Support ❤️
 
 If you find this project helpful, please consider:
+
 - Giving it a ⭐️ on GitHub
 - Sharing it with others
 - Contributing back to the project

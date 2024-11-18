@@ -3,7 +3,7 @@
 // This enables autocomplete, go to definition, etc.
 
 // Setup type definitions for built-in Supabase Runtime APIs
-import "jsr:@supabase/functions-js/edge-runtime.d.ts"
+import "jsr:@supabase/functions-js/edge-runtime.d.ts";
 
 /* To invoke locally:
 
@@ -18,29 +18,38 @@ import "jsr:@supabase/functions-js/edge-runtime.d.ts"
 */
 
 Deno.serve(async (req) => {
-  const { code } = await req.json()
+  const { code } = await req.json();
   const clientId = Deno.env.get("GITHUB_CLIENT_ID");
   const clientSecret = Deno.env.get("GITHUB_CLIENT_SECRET");
   if (clientId == null || clientSecret == null)
-    return new Response(JSON.stringify({title: "Missing GitHub clientId or clientSecret", status: 400}), {status: 400});
+    return new Response(
+      JSON.stringify({
+        title: "Missing GitHub clientId or clientSecret",
+        status: 400,
+      }),
+      { status: 400 },
+    );
   const tokenUrl = `https://github.com/login/oauth/access_token`;
   const response = await fetch(tokenUrl, {
     method: "POST",
     headers: {
-      "Accept": "application/json",
-      "Content-Type": "application/json"
+      Accept: "application/json",
+      "Content-Type": "application/json",
     },
     body: JSON.stringify({
       clientId,
       clientSecret,
-      code
-    })
+      code,
+    }),
   });
-  if (!response.ok) 
-    return new Response(JSON.stringify({status: 500, title: "Something went wrong."}), {status: 500});
-  const {access_token} = await response.json();
-  return new Response(
-    JSON.stringify({access_token}),
-    {headers: {"Content-Type": "application/json"}, status: 201}
-  )
-})
+  if (!response.ok)
+    return new Response(
+      JSON.stringify({ status: 500, title: "Something went wrong." }),
+      { status: 500 },
+    );
+  const { access_token } = await response.json();
+  return new Response(JSON.stringify({ access_token }), {
+    headers: { "Content-Type": "application/json" },
+    status: 201,
+  });
+});

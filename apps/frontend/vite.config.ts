@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [svgr(), react()],
   resolve: {
     alias: {
-      '@': join(process.cwd(), "src")
+      "@": join(process.cwd(), "src"),
     },
   },
 });
