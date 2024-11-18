@@ -12,12 +12,9 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "npm run --workspace apps/frontend dev && npm run --workspace packages/serverless dev",
-    "build": "npm run --workspace apps/frontend build && npm run --workspace packages/serverless deploy",
-    "lint": "npm run --workspace apps/frontend lint",
+    "dev": "bun run --filter=@git-alerts/frontend dev && bun run --filter=@git-alerts/serverless dev",
+    "build": "bun run --filter=@git-alerts/frontend build && bun run --filter=@git-alerts/serverless deploy",
+    "lint": "bun run --filter=@git-alerts/frontend lint",
     "format": "prettier --write ."
-  },
-  "devDependencies": {
-    "prettier": "^3.0.0"
   }
 }

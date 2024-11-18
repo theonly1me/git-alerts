@@ -5,7 +5,7 @@
     "type": "module",
     "scripts": {
         "dev": "supabase start || true && supabase functions serve --env-file ./supabase/.env.local    ",
-        "deploy": "deno deploy --project serverless"
+        "deploy": "supabase functions deploy gh-exchange-code"
     },
     "devDependencies": {
         "@git-alerts/eslint-config": "*",
