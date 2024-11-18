@@ -14,7 +14,10 @@
   "scripts": {
     "dev": "bun run --filter=@git-alerts/frontend dev && bun run --filter=@git-alerts/serverless dev",
     "build": "bun run --filter=@git-alerts/frontend build && bun run --filter=@git-alerts/serverless deploy",
-    "lint": "npm run --filter=@git-alerts/frontend lint",
+    "lint": "eslint .",
     "format": "prettier --write ."
+  },
+  "dependencies": {
+    "typescript-eslint": "^8.14.0"
   }
 }

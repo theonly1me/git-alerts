@@ -2,7 +2,8 @@
   "name": "@git-alerts/eslint-config",
   "version": "1.0.0",
   "private": true,
-  "main": ".eslintrc.js",
+  "main": "eslint.config.js",
+  "type": "module",
   "peerDependencies": {
     "eslint": "^9.13.0",
     "eslint-plugin-react-hooks": "^5.0.0",
